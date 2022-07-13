@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(yellow,rgb(154, 154, 2));
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+body::after{
+    content:"";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(blue,rgb(0, 0, 58));
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(35% at right 70%);
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+header h1{
+    color: blue;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+li a{
+    color: #000;
+    text-decoration: none;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 30px;
+    transition: all 0,3s ease 0s;
+}
+ul li a:hover{
+    background:blue;
+    cursor: pointer;
+    border-radius: 50px;
+    color: yellow;
+}
+#service p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#service button{
+    display: flex;
+    text-align: center;
+    margin: auto;
+        border: none;
+        outline: none;
+        background: #2f2f2f;
+        color: #fff;
+        font-size: 27px;
+        text-align: center;
+        box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+}
+#ar p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    font-size: 25px;
+}
+#btn-2 button{
+    display: flex;
+    text-align: center;
+    margin: auto;
+        border: none;
+        outline: none;
+        background: #2f2f2f;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+}
+#about{
+    display: flex;
+    padding: 100px;
+    margin: 60px;
+    justify-content: space-between;
+}
+#about h2{
+    margin: 30px;
+    color: rgb(255, 45, 45);
+    font-family: 'Times New Roman', Times, serif;
+}
+#about h3{
+    margin: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#about details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#det{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.animation {
+    padding: 20px;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(77, 77, 255),blue);
+    position: relative;
+    border-radius: 50%;
+    animation: mymove 5s infinite;
+  }
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 300px;}
+  }
